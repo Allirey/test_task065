@@ -9,8 +9,8 @@ $ python manage.py migrate\
 $ python manage.py runserver
 
 ###### endpoints:
-http://localhost/admin/ \
-http://localhost/api/users/ \
-http://localhost/api/rest-auth/login/ \
-http://localhost/api/rest-auth/logout/
+http://localhost:8000/admin/ \
+http://localhost:8000/api/users/ \
+http://localhost:8000/api/rest-auth/login/ \
+http://localhost:8000/api/rest-auth/logout/
 
