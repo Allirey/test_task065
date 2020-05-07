@@ -2,10 +2,11 @@
 ### django + DRF simple api app
 
 ### to local run:
-create and activate virtual env;\
-install dependencies from requirements.txt file;\
-$ python manage.py makemigrations\
-$ python manage.py migrate\
+clone project; \
+create and activate virtual env; \
+install dependencies from requirements.txt file; \
+$ python manage.py makemigrations \
+$ python manage.py migrate \
 $ python manage.py runserver
 
 ###### endpoints:
