@@ -5,7 +5,6 @@
 clone project; \
 create and activate virtual env; \
 install dependencies from requirements.txt file; \
-$ python manage.py makemigrations \
 $ python manage.py migrate \
 $ python manage.py runserver
 
