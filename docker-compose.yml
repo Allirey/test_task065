@@ -3,5 +3,17 @@ version: '3.7'
 services:
   backend:
     build: .
-    command: bash -c "python3 manage.py migrate && python3 runserver 0.0.0.0:8000"
+    command: gunicorn test_task065.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+    - ./:/code/
+    - staticfiles:/code/staticfiles
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - staticfiles:/code/staticfiles
+    ports:
+      - "8000:80"
+    depends_on:
+      - backend
 

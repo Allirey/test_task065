@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 
 COPY . /code/
 
-RUN  python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+RUN bash -c "python3 manage.py migrate && python3 manage.py collectstatic --noinput"
 
 EXPOSE 8000
